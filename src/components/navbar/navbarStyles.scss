@@ -61,8 +61,8 @@
 }
 
 @media screen and (max-width: 768px) {
-    .nav_logo {
-        display: flex;
+    .navbar .active {
+        background-color: inherit;
     }
     .nav_list {
         align-items: center;
