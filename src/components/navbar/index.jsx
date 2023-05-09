@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
+import "./navbarStyles.scss";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -7,9 +8,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
             <div className="nav_logo">
-                <NavLink to="/">
-                    <h2>FG</h2>
-                </NavLink>
+                <NavLink to="/" activeclassname="smth">FG</NavLink>
             </div>
 
             <div className={`nav_list ${isOpen && "open"}`}>
