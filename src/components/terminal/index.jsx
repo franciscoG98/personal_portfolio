@@ -1,6 +1,7 @@
 import { AiOutlineCode } from "react-icons/ai";
 
 import "./terminalStyles.scss"
+import Bash from "../bash";
 
 const Terminal = () => {
   return (
@@ -14,7 +15,9 @@ const Terminal = () => {
                 <span className="terminal_close">X</span>
             </div>
         </div>
-        <div className="terminal_body"></div>
+        <div className="terminal_body">
+            <Bash />
+        </div>
     </div>
   )
 }
