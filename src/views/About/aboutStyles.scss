@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+main {
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #5e5e5e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 60px);
+}
