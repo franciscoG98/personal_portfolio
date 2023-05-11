@@ -18,7 +18,7 @@ const Terminal = () => {
         <div className="terminal_body">
             <div className="line line1">
                 <Bash />
-                <span className="typer typer1">Hi there! my name is francisco</span>
+                <span className="typer typer1">Hi there! my name is Francisco</span>
             </div>
             <div className="line line2">
                 <Bash />

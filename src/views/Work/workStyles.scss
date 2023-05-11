@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.work_container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
