@@ -7,7 +7,6 @@ const About = () => {
     <>
         <Navbar />
         <main>
-            <h2>About</h2>
             <Terminal />
         </main>
     </>

@@ -80,27 +80,27 @@
 
 // type writer animation
 .line1 {
-    animation: typewritter 5s steps(45, end) normal forwards, cursor 3s steps(45) forwards;
+    animation: typewritter 5s steps(45, end) normal forwards, cursor 3s steps(10) forwards;
     width: 165px;
 }
 
 .line2 {
-    animation: typewritter 5s steps(45, end) normal forwards 5s, cursor 3s steps(45) forwards;
+    animation: typewritter 5s steps(45, end) normal forwards 5s, cursor 3s steps(10) forwards 5s;
     width: 165px;
 }
 
 .line3 {
-    animation: typewritter 5s steps(45, end) normal forwards 10s, cursor 3s steps(45) forwards;
+    animation: typewritter 5s steps(45, end) normal forwards 10s, cursor 3s steps(10) forwards 10s;
     width: 165px;
 }
 
 .line4 {
-    animation: typewritter 5s steps(45, end) normal forwards 15s, cursor 3s steps(45) forwards;
+    animation: typewritter 5s steps(45, end) normal forwards 15s, cursor 3s steps(10) forwards 15s;
     width: 165px;
 }
 
 .line5 {
-    animation: typewritter 5s steps(45, end) normal forwards 20s, cursor 3s steps(45) forwards;
+    animation: typewritter 5s steps(45, end) normal forwards 20s, cursor 3s steps(10) forwards 20s;
     width: 165px;
 }
 
@@ -112,6 +112,6 @@
 
 @keyframes cursor {
     0% {border-right-color: #fff;}
-    90% {border-right-color: #fff;}
+    99% {border-right-color: #fff;}
     100% {border-right-color: transparent;}
 }

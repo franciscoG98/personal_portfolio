@@ -26,15 +26,15 @@ const Terminal = () => {
             </div>
             <div className="line line3">
                 <Bash />
-                <span className="typer typer3">I like to code, love to learn new technologies and build things on the web</span>
+                <span className="typer typer3">I like to code, love to learn new technologies, and build things on the web</span>
             </div>
             <div className="line line4">
                 <Bash />
-                <span className="typer typer4">I think the internet is for making our lives easier and should be accesible to everyone</span>
+                <span className="typer typer4">I think the internet is for making our lives easier and should be accessible to everyone</span>
             </div>
             <div className="line line5">
                 <Bash />
-                <span className="typer typer">I&apos;m open to work or colaborate in new projects!</span>
+                <span className="typer typer">I&apos;m open to working or collaborating on new projects!</span>
             </div>
         </div>
     </div>
