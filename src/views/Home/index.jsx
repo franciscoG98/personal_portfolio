@@ -1,4 +1,5 @@
 import Navbar from '../../components/navbar'
+import Terminal from '../../components/terminal'
 
 const Home = () => {
 
@@ -6,7 +7,7 @@ const Home = () => {
     <>
       <Navbar />
       <main>
-        <h1>hello world!</h1>
+        <Terminal />
       </main>
     </>
   )
