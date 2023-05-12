@@ -25,7 +25,7 @@ const ContactForm = () => {
 
         <label className="form_label">Message</label>
         <textarea
-            className="form_input"
+            className="form_input textarea"
             required
             rows={8}
             type="text"

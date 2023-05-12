@@ -12,3 +12,52 @@ main {
     flex-direction: column;
     min-height: calc(100vh - 60px);
 }
+
+.about_title {
+    color: #15b315;
+    font-size: 30px;
+    margin: 25px 0;
+}
+
+.swiper_container {
+    width: 70vw;
+}
+
+.swiper_slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #15b315;
+}
+
+.card_image {
+    height: auto;
+    vertical-align: middle;
+    height: 40vw;
+    width: 60vw;
+}
+
+.frontend, .backend, .tools {
+    display: flex;
+    p {
+        align-items: center;
+        background-color: #000;
+        border: 1px solid #15b315;
+        border-radius: 20px;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 1.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        opacity: .7;
+        padding: 10px;
+    }
+    p:hover {
+        opacity: 1;
+        color: #15b315;
+        transition: .5s;
+    }
+}

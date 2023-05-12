@@ -4,16 +4,33 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 30px 0;
     position: relative;
     width: 350px;
 }
 
+.form_label {
+    text-align: start;
+    color: #15b315;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
 .form_input {
     border-radius: 20px;
-    margin: 10px 0 10px 0;
-    text-align: center;
+    margin: 5px 0 5px 0;
+    height: 15px;
+    padding: 10px;
     width: 200px;
+}
+
+.textarea {
+    height: 100px;
+}
+
+.form_input:focus {
+    outline: #15b315 auto ;
 }
 
 .submit_btn {
@@ -21,5 +38,6 @@
     margin-top: 15px;
     padding: 5px;
     text-transform: uppercase;
+    height: max-content;
     width: 100px;
 }
