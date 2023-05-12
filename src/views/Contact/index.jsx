@@ -1,4 +1,6 @@
+import ContactForm from '../../components/contactForm'
 import Navbar from '../../components/navbar'
+import "./contactStyles.scss"
 
 const Contact = () => {
   return (
@@ -6,6 +8,7 @@ const Contact = () => {
         <Navbar />
         <main>
             <h2>Contact</h2>
+            <ContactForm />
         </main>
     </>
   )
