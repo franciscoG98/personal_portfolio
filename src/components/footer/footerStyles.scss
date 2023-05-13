@@ -43,3 +43,16 @@
     color: #15b315;
     transition: .5s;
 }
+
+/* responsive */
+@media screen and (max-width: 767px) {
+    .footer section {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .footer .copy {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
