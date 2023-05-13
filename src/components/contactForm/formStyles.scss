@@ -52,3 +52,10 @@
     background-color: #15b315;
     transition: .5s;
 }
+
+@media screen and (max-width: 767px) {
+    .form_container {
+        width: 300px;
+        margin: 30px 0;
+    }
+}
