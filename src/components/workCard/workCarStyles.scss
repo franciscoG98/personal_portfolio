@@ -54,6 +54,15 @@
 
 /* responsive */
 
-/* @media screen and (max-width: 1266px) {} */
-
-/* @media screen and (max-width: 800px) {} */
+@media screen and (max-width: 767px) {
+    .card_container {
+        width: 270px;
+        height: max-content;
+    }
+    .card_img {
+        width: 270px;
+    }
+    .card_link {
+        text-decoration: underline;
+    }
+}
