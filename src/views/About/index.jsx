@@ -1,4 +1,5 @@
 import Navbar from '../../components/navbar'
+import Footer from '../../components/footer';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/css";
@@ -190,6 +191,7 @@ const About = () => {
             </p>
           </section>
         </main>
+        <Footer />
     </>
   )
 }

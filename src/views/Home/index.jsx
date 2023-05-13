@@ -1,3 +1,4 @@
+import Footer from '../../components/footer'
 import Navbar from '../../components/navbar'
 import Terminal from '../../components/terminal'
 
@@ -9,6 +10,7 @@ const Home = () => {
       <main>
         <Terminal />
       </main>
+      <Footer />
     </>
   )
 }

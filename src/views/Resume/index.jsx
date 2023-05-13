@@ -1,3 +1,4 @@
+import Footer from '../../components/footer'
 import Navbar from '../../components/navbar'
 
 const Resume = () => {
@@ -7,6 +8,7 @@ const Resume = () => {
         <main>
             <h2>Resume</h2>
         </main>
+        <Footer />
     </>
   )
 }

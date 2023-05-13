@@ -1,10 +1,14 @@
+import Footer from '../../components/footer'
 import Navbar from '../../components/navbar'
 
 const Error = () => {
   return (
     <>
         <Navbar />
-        <h2>Error</h2>
+        <main>
+          <h2>Error</h2>
+        </main>
+        <Footer />
     </>
   )
 }

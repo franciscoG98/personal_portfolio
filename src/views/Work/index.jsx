@@ -1,10 +1,11 @@
 import Navbar from '../../components/navbar'
+import Footer from '../../components/footer'
+
 import WorkCard from '../../components/workCard'
 import sachaMistolImage from '../../assets/images/sachamistol.png'
 import neloworks from '../../assets/images/neloworks.png'
 import movieapp from '../../assets/images/movieapp.png'
 import portfoliov1 from '../../assets/images/portfolioV1.png'
-
 
 import './workStyles.scss'
 
@@ -50,6 +51,7 @@ const Work = () => {
             />
           </section>
         </main>
+        <Footer />
     </>
   )
 }
