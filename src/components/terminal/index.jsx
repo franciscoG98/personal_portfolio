@@ -2,6 +2,7 @@ import { AiOutlineCode } from "react-icons/ai";
 
 import "./terminalStyles.scss"
 import Bash from "../bash";
+import { Link } from "react-router-dom";
 
 const Terminal = () => {
   return (
@@ -17,24 +18,40 @@ const Terminal = () => {
         </div>
         <div className="terminal_body">
             <div className="line line1">
-                <Bash />
+                <Bash className="bash" />
                 <span className="typer typer1">Hi there! my name is Francisco</span>
             </div>
             <div className="line line2">
                 <Bash />
-                <span className="typer typer2">I&apos;m a web developer from Bariloche, Argentina</span>
+                <span className="typer typer2">I&apos;m a web developer from Bariloche,</span>
             </div>
             <div className="line line3">
                 <Bash />
-                <span className="typer typer3">I like to code, love to learn new technologies, and build things on the web</span>
+                <span className="typer typer2">Argentina. I like to code,</span>
             </div>
             <div className="line line4">
-                <Bash />
-                <span className="typer typer4">I think the internet is for making our lives easier and should be accessible to everyone</span>
+                <Bash className="bash" />
+                <span className="typer typer3">and build things on the web.</span>
             </div>
             <div className="line line5">
-                <Bash />
-                <span className="typer typer">I&apos;m open to working or collaborating on new projects!</span>
+                <Bash className="bash" />
+                <span className="typer typer4">I think the internet is for making</span>
+            </div>
+            <div className="line line6">
+                <Bash className="bash" />
+                <span className="typer typer5">our lives easier and should be</span>
+            </div>
+            <div className="line line7">
+                <Bash className="bash" />
+                <span className="typer typer6">accessible to everyone. I&apos;m open</span>
+            </div>
+            <div className="line line8">
+                <Bash className="bash" />
+                <span className="typer typer7">to working or collaborating on new</span>
+            </div>
+            <div className="line line9">
+                <Bash className="bash" />
+                <span className="typer typer8">projects! feel free to <Link className="link_contact" to='/contact'>contact me</Link></span>
             </div>
         </div>
     </div>

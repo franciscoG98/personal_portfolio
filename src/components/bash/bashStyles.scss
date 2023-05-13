@@ -15,3 +15,9 @@
 .bash_line {
     color: #1d6bdf;
 }
+
+@media screen and (max-width: 767px) {
+    .bash {
+        display: none;
+    }
+}

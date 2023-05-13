@@ -47,7 +47,6 @@ const About = () => {
     <>
         <Navbar />
         <main>
-          <h2 className='about_title'>Certificates</h2>
           <Swiper
             className="swiper_container"
             navigation={true}

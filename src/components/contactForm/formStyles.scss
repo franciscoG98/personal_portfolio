@@ -37,10 +37,18 @@
 }
 
 .submit_btn {
+    background-color: #fff;
+    color: #000;
     border-radius: 20px;
+    font-weight: 700;
     margin-top: 15px;
     padding: 5px;
     text-transform: uppercase;
     height: max-content;
     width: 100px;
+}
+
+.submit_btn:hover {
+    background-color: #15b315;
+    transition: .5s;
 }
