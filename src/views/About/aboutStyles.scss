@@ -62,3 +62,20 @@ main {
         transition: .5s;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .swiper_container {
+        width: 90%;
+    }
+
+    .card_image {
+        width: 220px;
+        height: 150px;
+    }
+
+    .frontend, .backend, .tools {
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+    }
+
+}
