@@ -8,7 +8,7 @@ const Contact = () => {
     <>
         <Navbar />
         <main>
-            <h2>Contact</h2>
+            <h2 className='contact_title'>Contact me!</h2>
             <ContactForm />
         </main>
         <Footer />

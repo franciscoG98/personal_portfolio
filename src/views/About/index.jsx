@@ -89,7 +89,6 @@ const About = () => {
             </SwiperSlide>
           </Swiper>
 
-          <h2 className='about_title'>Technologies</h2>
           <h3 className='about_title'>Frontend</h3>
           <section className='frontend'>
             <p>
