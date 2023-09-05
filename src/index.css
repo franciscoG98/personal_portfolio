@@ -3,3 +3,16 @@
   line-height: 1.5;
   font-weight: 400;
 }
+
+* {
+  margin: 0;
+  border: 0;
+}
+
+.container {
+  height: calc(100vh - 100px - 60px);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #000;
+}
