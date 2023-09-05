@@ -7,8 +7,8 @@
     background: #202020;
     border-radius: 10px;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 1.5);
-    height: 425px;
-    width: 767px;
+    height: 325px;
+    width: 500px;
 }
 
 .terminal_header {
@@ -31,13 +31,6 @@
     font-weight: 700;
 }
 
-.terminal_controls {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-}
-
 .terminal_close {
     align-items: center;
     background-color: red;
@@ -52,76 +45,52 @@
     width: 20px;
 }
 
-.terminal_min {
-    border-bottom: 1px solid #fff;
-    width: 15px;
-}
-
-.terminal_big {
-    border: 1px solid #fff;
-    height: 15px;
-    width: 15px;
-}
-
 .line {
     display: flex;
-    // border-right: 0.5em solid #fff;
-    margin-bottom: 10px;
+    margin: 10px 0;
+    margin-left: 10px;
     white-space: nowrap;
     overflow: hidden;
-    .typer {
-        margin-left: 10px;
-    }
-}
+    font-size: 13px;
+    width: 120px;
 
-.line1 {
-    margin-top: 10px;
+    .typer {
+        margin-left: 5px;
+    }
 }
 
 // type writer animation
 .line1 {
+    margin-top: 10px;
     animation: typewritter 2s steps(20, end) normal forwards, cursor 2s steps(20) forwards;
-    width: 165px;
 }
 
 .line2 {
     animation: typewritter 2s steps(20, end) normal forwards 2s, cursor 2s steps(20) forwards 2s;
-    width: 165px;
 }
 
 .line3 {
     animation: typewritter 2s steps(20, end) normal forwards 4s, cursor 2s steps(20) forwards 4s;
-    width: 165px;
 }
 
 .line4 {
     animation: typewritter 2s steps(20, end) normal forwards 6s, cursor 2s steps(20) forwards 6s;
-    width: 165px;
 }
 
 .line5 {
     animation: typewritter 2s steps(20, end) normal forwards 8s, cursor 2s steps(20) forwards 8s;
-    width: 165px;
 }
 
 .line6 {
     animation: typewritter 2s steps(20, end) normal forwards 10s, cursor 2s steps(20) forwards 10s;
-    width: 165px;
 }
 
 .line7 {
     animation: typewritter 2s steps(20, end) normal forwards 12s, cursor 2s steps(20) forwards 12s;
-    width: 165px;
 }
 
 .line8 {
     animation: typewritter 2s steps(20, end) normal forwards 14s, cursor 2s steps(20) forwards 14s;
-    width: 165px;
-}
-
-.line9 {
-    animation: typewritter 2s steps(20, end) normal forwards 16s, cursor 2s steps(20) forwards 16s;
-    width: 165px;
 }
 
 .link_contact {
@@ -138,7 +107,7 @@
 
 
 @keyframes typewritter {
-    from { width: 165px; }
+    // from { width: 165px; }
     to { width: 450px; }
 }
 
@@ -151,7 +120,7 @@
 
 /* responsive */
 @media screen and (max-width: 767px) {
-    .line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8, .line9 {
+    .line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8 {
         width: 0;
     }
 

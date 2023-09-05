@@ -4,10 +4,10 @@ import "./bashStyles.scss"
 const Bash = () => {
   return (
     <p className="bash">
-        <span className="bash_name">pancho@laptop</span>
-        <span className="bash_dots">:</span>
-        <span className="bash_line">~</span>
-        <span className="bash_dollar">$</span>
+      <span className="bash_name">pancho@laptop</span>
+      <span className="bash_dots">:</span>
+      <span className="bash_line">~</span>
+      <span className="bash_dollar">$</span>
     </p>
   )
 }

@@ -10,9 +10,12 @@
 }
 
 .container {
-  height: calc(100vh - 100px - 60px);
   align-items: center;
-  justify-content: center;
-  display: flex;
   background-color: #000;
+  color: #fff;
+  display: flex;
+  height: calc(100vh - 100px - 60px);
+  justify-content: center;
 }
+
+/* .homeView {} */
