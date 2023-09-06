@@ -1,26 +1,32 @@
-.resume_container section {
+.resume_container {
     display: flex;
     flex-direction: column;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-top: 1px solid #fff;
 }
 
 .resume_link {
     align-items: center;
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #15b315;
     border: 1px solid #15b315;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     font-weight: 600;
+    height: 150px;
     justify-content: center;
     margin: 10px;
-    opacity: .7;
     padding: 10px;
     text-decoration: none;
+    width: 250px;
 }
 
 .resume_link:hover {
-    opacity: 1;
     color: #15b315;
+    background-color: #000;
     transition: .5s;
 }
