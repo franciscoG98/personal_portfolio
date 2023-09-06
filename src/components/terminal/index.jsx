@@ -17,35 +17,35 @@ const Terminal = () => {
         <div className="terminal_body">
             <div className="line line1">
                 <Bash className="bash" />
-                <span className="typer typer1">Hi there! my name is Francisco.</span>
+                <span className="typer typer1">Hi there! I&apos;m Francisco a web developer</span>
             </div>
             <div className="line line2">
                 <Bash />
-                <span className="typer typer2">I&apos;m a web developer from Argentina.</span>
+                <span className="typer typer2">based in Argentina.</span>
             </div>
             <div className="line line3">
                 <Bash />
-                <span className="typer typer2">I like to code, and build things on the web.</span>
+                <span className="typer typer2">I'm passionate about using web development</span>
             </div>
             <div className="line line4">
                 <Bash className="bash" />
-                <span className="typer typer3">I think the internet is for making our lives easier.</span>
+                <span className="typer typer3">to solve real-world problems and make life easier.</span>
             </div>
             <div className="line line5">
                 <Bash className="bash" />
-                <span className="typer typer4">I love linux and javascript but I&apos;m</span>
+                <span className="typer typer4">I love Linux and JavaScript but am always eager</span>
             </div>
             <div className="line line6">
                 <Bash className="bash" />
-                <span className="typer typer5">willing to learn anything, currently I&apos;m getting</span>
+                <span className="typer typer5">to learn. Currently exploring TypeScript and C.</span>
             </div>
             <div className="line line7">
                 <Bash className="bash" />
-                <span className="typer typer6">into typescript and C (because college).</span>
+                <span className="typer typer6">I'm open to new challenges and collaborations.</span>
             </div>
             <div className="line line8">
                 <Bash className="bash" />
-                <span className="typer typer7">Feel free to get in touch</span>
+                <span className="typer typer7">Let's chat!</span>
             </div>
         </div>
     </div>

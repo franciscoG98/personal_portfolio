@@ -6,7 +6,7 @@ import './workStyles.scss'
 
 const Work = () => {
   return (
-    <main className='work_container'>
+    <main className='work_container' id="work_section">
       <section>
         <WorkCard
           title='Sacha Mistol Art Hotel'

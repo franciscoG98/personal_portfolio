@@ -7,7 +7,7 @@ import './resumeStyles.scss'
 const Resume = () => {
   return (
     <>
-      <div className='resume_container'>
+      <div className='resume_container' id="resume_section">
         <a className='resume_link' href="https://drive.google.com/file/d/1di2ryzr53VK21KZItS1J5AhPfMS80gIJ/view" target="__blank" rel="noopener noreferrer">
           <HiOutlineDocumentText size={60} />
           <span>See Resume in English</span>

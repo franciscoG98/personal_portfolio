@@ -1,5 +1,4 @@
 import { useState } from "react"
-import { NavLink } from "react-router-dom"
 import "./navbarStyles.scss";
 
 const Navbar = () => {
@@ -8,19 +7,19 @@ const Navbar = () => {
   return (
     <nav className="navbar">
             <div className="nav_logo">
-                <NavLink to="/" activeclassname="smth">FG</NavLink>
+                <a href="#" activeclassname="smth">FG</a>
             </div>
 
             <div className={`nav_list ${isOpen && "open"}`}>
-                <NavLink to="/" className="nav_item" activeclassname="active">
+                <a href="" className="nav_item" activeclassname="active" onClick={() => setIsOpen(!isOpen)}>
                     Home
-                </NavLink>
-                <NavLink to="/work" className="nav_item" activeclassname="active">
+                </a>
+                <a href="#work_section" className="nav_item" activeclassname="active" onClick={() => setIsOpen(!isOpen)}>
                     Work
-                </NavLink>
-                <NavLink to="/resume" className="nav_item" activeclassname="active">
+                </a>
+                <a href="#resume_section" className="nav_item" activeclassname="active" onClick={() => setIsOpen(!isOpen)}>
                     Resume
-                </NavLink>
+                </a>
             </div>
 
             <div className={`nav_toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
