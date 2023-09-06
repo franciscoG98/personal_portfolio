@@ -2,6 +2,7 @@ import Footer from './components/footer'
 import Navbar from './components/navbar'
 import Terminal from './components/terminal'
 import Work from './views/Work'
+import Resume from './views/Resume'
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
         <Terminal />
       </div>
       <Work />
+      <Resume />
       <Footer />
     </main>
   )
