@@ -1,18 +1,18 @@
 .resume_container {
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
+    min-height: calc(100vh - 100px);
     align-items: center;
     justify-content: center;
-    background-color: #000;
-    border-top: 1px solid #fff;
+    background-color: var(--portfolio-bg);
+    border-top: 1px solid var(--portfolio-white);
 }
 
 .resume_link {
     align-items: center;
-    color: #000;
-    background-color: #15b315;
-    border: 1px solid #15b315;
+    color: var(--portfolio-bg);
+    background-color: var(--portfolio-terminal-green);
+    border: 1px solid var(--portfolio-terminal-green);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
 }
 
 .resume_link:hover {
-    color: #15b315;
-    background-color: #000;
+    color: var(--portfolio-terminal-green);
+    background-color: var(--portfolio-bg);
     transition: .5s;
 }

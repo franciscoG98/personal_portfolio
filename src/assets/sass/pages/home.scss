@@ -1,0 +1,8 @@
+.home__container {
+  align-items: center;
+  background-color: var(--portfolio-bg);
+  color: var(--portfolio-white);
+  display: flex;
+  min-height: calc(100vh - 100px);
+  justify-content: center;
+}

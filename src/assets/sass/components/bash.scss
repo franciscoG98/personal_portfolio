@@ -6,11 +6,11 @@
 }
 
 .bash_name {
-    color: #15b315;
+    color: var(--portfolio-terminal-green);
 }
 
 .bash_line {
-    color: #1d6bdf;
+    color: var(--portfolio-terminal-blue);
 }
 
 @media screen and (max-width: 767px) {

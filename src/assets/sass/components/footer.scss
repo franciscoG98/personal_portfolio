@@ -1,20 +1,19 @@
 .footer {
     align-items: center;
-    background-color: #000;
-    border-top: 1px solid #fff;
-    color: #fff;
+    background-color: var(--portfolio-bg);
+    border-top: 1px solid var(--portfolio-white);
+    color: var(--portfolio-white);
     display: flex;
-    justify-content: center;
-    position: sticky;
     height: 100px;
+    justify-content: center;
 }
 
 .footer_item {
     align-items: center;
-    background-color: #15b315;
-    border: 1px solid #000;
+    background-color: var(--portfolio-terminal-green);
+    border: 1px solid var(--portfolio-bg);
     border-radius: 20px;
-    color: #000;
+    color: var(--portfolio-bg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,9 +30,9 @@
 }
 
 .footer_item:hover {
-    border: 1px solid #15b315;
-    background-color: #000;
-    color: #15b315;
+    border: 1px solid var(--portfolio-terminal-green);
+    background-color: var(--portfolio-bg);
+    color: var(--portfolio-terminal-green);
     transition: .5s;
 }
 

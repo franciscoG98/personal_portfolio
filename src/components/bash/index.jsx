@@ -1,5 +1,3 @@
-import "./bashStyles.scss"
-
 // eslint-disable-next-line react/prop-types
 const Bash = () => {
   return (
