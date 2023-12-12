@@ -1,0 +1,30 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+
+  // colors
+  --portfolio-bg: #000;
+  --portfolio-white: #fff;
+  --portfolio-terminal-bg: #202020;
+  --portfolio-terminal-header: #57524E;
+  --portfolio-red: #ff0000;
+  --portfolio-terminal-green: #15b315;
+  --portfolio-terminal-blue: #1d6bdf;
+}
+
+* {
+  margin: 0;
+  border: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+body {
+  background-color: var(--lv-color-secondary-light);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

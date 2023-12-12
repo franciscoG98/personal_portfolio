@@ -1,13 +1,13 @@
 .card_container {
     align-items: center;
-    border: 1px solid #15b315;
+    border: 1px solid var(--portfolio-terminal-green);
     border-radius: 50px;
-    box-shadow: 0 0 1rem rgba(0, 0, 0);
-    background-color: #000;
+    box-shadow: 0 0 1rem var(--portfolio-bg);
+    background-color: var(--portfolio-bg);
     display: flex;
     flex-direction: column;
     height: 430px;
-    margin: 50px;
+    // margin: 50px;
     opacity: .7;
     padding-bottom: 20px;
     width: 400px;
@@ -41,7 +41,7 @@
 
 .card_link {
     align-items: center;
-    color: #fff;
+    color: var(--portfolio-white);
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -49,7 +49,7 @@
 }
 
 .card_link:hover {
-    color: #15b315;
+    color: var(--portfolio-terminal-green);
 }
 
 /* responsive */

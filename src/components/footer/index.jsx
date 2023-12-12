@@ -1,8 +1,6 @@
 import { SiGithub, SiGmail, SiCodepen } from "react-icons/si";
 import { GrLinkedinOption } from "react-icons/gr";
 
-import './footerStyles.scss'
-
 const Footer = () => {
   return (
     <footer className='footer'>

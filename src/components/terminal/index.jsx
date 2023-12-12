@@ -1,8 +1,5 @@
-import { AiOutlineCode } from "react-icons/ai";
-
-import "./terminalStyles.scss"
 import Bash from "../bash";
-import { Link } from "react-router-dom";
+import { AiOutlineCode } from "react-icons/ai";
 
 const Terminal = () => {
   return (
@@ -25,7 +22,7 @@ const Terminal = () => {
             </div>
             <div className="line line3">
                 <Bash />
-                <span className="typer typer2">I'm passionate about using web development</span>
+                <span className="typer typer2">I&apos;m passionate about using web development</span>
             </div>
             <div className="line line4">
                 <Bash className="bash" />
@@ -41,11 +38,11 @@ const Terminal = () => {
             </div>
             <div className="line line7">
                 <Bash className="bash" />
-                <span className="typer typer6">I'm open to new challenges and collaborations.</span>
+                <span className="typer typer6">I&apos;m open to new challenges and collaborations.</span>
             </div>
             <div className="line line8">
                 <Bash className="bash" />
-                <span className="typer typer7">Let's chat!</span>
+                <span className="typer typer7">Let&apos;s chat!</span>
             </div>
         </div>
     </div>
