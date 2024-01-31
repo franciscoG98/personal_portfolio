@@ -6,15 +6,12 @@ const Terminal = () => {
     <div className="terminal">
         <div className="terminal_header">
             <AiOutlineCode className="terminal_logo" size={25}/>
-            <span className="terminal_name">pancho@laptop:~/workspace/portfolioV3</span>
-            <div className="terminal_controls">
-                <span className="terminal_close">X</span>
-            </div>
+            <span className="terminal_name">Terminal</span>
         </div>
         <div className="terminal_body">
             <div className="line line1">
                 <Bash className="bash" />
-                <span className="typer typer1">Hi there! I&apos;m Francisco a web developer</span>
+                <span className="typer typer1">Hey there! I&apos;m Francisco, a web developer</span>
             </div>
             <div className="line line2">
                 <Bash />
@@ -30,15 +27,15 @@ const Terminal = () => {
             </div>
             <div className="line line5">
                 <Bash className="bash" />
-                <span className="typer typer4">I love Linux and JavaScript but am always eager</span>
+                <span className="typer typer4">I love Linux and JavaScript and also exploring</span>
             </div>
             <div className="line line6">
                 <Bash className="bash" />
-                <span className="typer typer5">to learn. Currently exploring TypeScript and C.</span>
+                <span className="typer typer5">accessibility world. Currently I find myself studing IT</span>
             </div>
             <div className="line line7">
                 <Bash className="bash" />
-                <span className="typer typer6">I&apos;m open to new challenges and collaborations.</span>
+                <span className="typer typer6">Technician at UNNE. I&apos;d love to collaborate on new projects.</span>
             </div>
             <div className="line line8">
                 <Bash className="bash" />

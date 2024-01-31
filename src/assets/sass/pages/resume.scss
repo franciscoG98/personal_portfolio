@@ -1,22 +1,48 @@
-.resume_container {
+.experience {
+    color: var(--portfolio-white);
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 100px);
-    align-items: center;
-    justify-content: center;
+    gap: 32px;
+    margin: auto;
+    margin-top: 60px;
+    width: 60%;
+
+    header {
+        align-items: flex-start;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4px;
+    }
+
+    h4 {
+        font-weight: 500;
+    }
+
+    footer {
+        padding: 8px;
+    }
+}
+
+.experience_year {
+    font-style: italic;
+    font-weight: 400;
+    margin-right: 12px;
+}
+
+.resume_container {
     background-color: var(--portfolio-bg);
-    border-top: 1px solid var(--portfolio-white);
+    display: flex;
+    justify-content: center;
+    margin-block: 44px;
 }
 
 .resume_link {
     align-items: center;
-    color: var(--portfolio-bg);
-    background-color: var(--portfolio-terminal-green);
-    border: 1px solid var(--portfolio-terminal-green);
+    color: var(--portfolio-terminal-green);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    font-weight: 600;
+    font-weight: 500;
     height: 150px;
     justify-content: center;
     margin: 10px;
@@ -26,7 +52,6 @@
 }
 
 .resume_link:hover {
-    color: var(--portfolio-terminal-green);
-    background-color: var(--portfolio-bg);
+    border: 1px solid var(--portfolio-terminal-green);
     transition: .5s;
 }

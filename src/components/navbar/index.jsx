@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/logo_fg98.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
     return (
         <nav className="navbar">
-            <NavLink to="/">
-                <img src={logo} alt="" className="nav_logo" />
+            <NavLink className="nav_link" to="/">
+                <h1 className="nav_title">Francisco Gonzalez</h1>
             </NavLink>
             <div className={`nav_list ${isOpen && "open"}`}>
                 <NavLink to="/" className="nav_item" activeClassName="active" onClick={() => setIsOpen(!isOpen)}>
