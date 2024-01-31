@@ -10,43 +10,15 @@
 
 .footer_item {
     align-items: center;
-    background-color: var(--portfolio-terminal-green);
-    border: 1px solid var(--portfolio-bg);
-    border-radius: 20px;
-    color: var(--portfolio-bg);
-    display: flex;
-    flex-direction: column;
+    border-radius: 8px;
+    color: var(--portfolio-terminal-green);
     justify-content: center;
-    margin: 10px;
-    padding: 10px;
+    margin: 12px;
+    padding: 12px;
     text-decoration: none;
-    width: 60px;
-
-    span {
-        font-size: 14px;
-        font-weight: 600;
-        margin-top: 10px;
-    }
 }
 
 .footer_item:hover {
     border: 1px solid var(--portfolio-terminal-green);
-    background-color: var(--portfolio-bg);
-    color: var(--portfolio-terminal-green);
-    transition: .5s;
-}
-
-.copy {
-    font-size: 12px;
-}
-
-/* responsive */
-@media screen and (max-width: 767px) {
-    .footer .footer_item {
-        width: 30px;
-        
-        span {
-            display: none;
-        }
-    }
+    transition-duration: 2s;
 }

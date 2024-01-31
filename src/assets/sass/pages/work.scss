@@ -1,13 +1,15 @@
 .work_container {
+    align-items: center;
     background-color: var(--portfolio-bg);
     color: var(--portfolio-white);
     display: grid;
-    place-items: center;
-    gap: 10px;
+    gap: 40px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    min-height: calc(100vh - 100px);
-    overflow: auto;
+    margin: auto;
+    min-height: calc(100vh - 160px);
+    // overflow: auto;
+    width: fit-content;
 }
 
 @media screen and (max-width: 767px) {

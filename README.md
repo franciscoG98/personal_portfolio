@@ -14,3 +14,20 @@ Run the code
 ```
 pnpm run dev
 ```
+
+common breackpoints
+480px, 768px, 1024px, and 1280px
+
+## Todo
+
+midu consejos
+- [] Imágenes optimizadas en tamaño y forma
+- [] Metadatos Open Graph para compartir en redes
+- [] No tiene faltas de ortografía
+- [] No existen enlaces rotos
+- [] Orden: Experiencia > Proyectos > Tecnologías
+- [] Usas párrafos separados y no tochos de texto
+- [] La carga inicial está por debajo del segundo
+
+Optional
+- [] agregar tooltips a los links del footer y a la terminal

@@ -4,9 +4,8 @@
     justify-content: space-between;
     display: flex;
     height: 60px;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
+    margin: auto;
+    width: 65%;
 }
 
 .nav_list {
@@ -21,30 +20,38 @@
 
 .nav_item {
     color: var(--portfolio-white);
-    font-weight: 300;
-    padding: 15px;
+    font-weight: 600;
+    padding: 16px;
     text-decoration: none;
 }
 
 .navbar .active {
     color: var(--portfolio-terminal-green);
-    font-weight: 700;
     transition: 2s;
 }
 
-.nav_logo {
-    border: 1px solid var(--portfolio-white);
-    border-radius: 7px;
-    width: 3.5rem;
-    margin: 7px 20px;
+.nav_link {
+    text-decoration: none;
 }
 
+.nav_title {
+    color: var(--portfolio-terminal-green);
+    margin: 12px;
+    width: max-content;
+}
+
+.nav_title:hover {
+    text-decoration: underline;
+}
 
 .nav_toggle {
     display: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
     .navbar .active {
         background-color: inherit;
     }
@@ -72,17 +79,17 @@
     .nav_toggle {
         display: flex;
         flex-direction: column;
-        margin: 15px;
+        margin: 16px;
     }
 
     .nav_toggle span {
         background: var(--portfolio-white);
-        border-radius: 2px;
+        border-radius: 4px;
         height: 4px;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
         transform-origin: 5px 0px;
         transition: all 0.2s linear;
-        width:  30px;
+        width: 30px;
     }
     .nav_toggle.open > span {
         transform: rotate(45deg) translate(0px, 0px);
