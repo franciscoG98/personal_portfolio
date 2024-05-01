@@ -6,13 +6,18 @@
     background-color: var(--portfolio-bg);
     display: flex;
     flex-direction: column;
-    height: 430px;
+    height: max-content;
     opacity: .7;
     padding-bottom: 20px;
-    width: 400px;
+    width: 270px;
 
     h2 {
         margin-top: 16px;
+    }
+
+    @include tablet-landscape {
+        height: 430px;
+        width: 400px;
     }
 }
 
@@ -20,7 +25,11 @@
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     height: 230px;
-    width: 400px;
+    width: 270px;
+
+    @include tablet-landscape {
+        width: 400px;
+    }
 }
 
 .card_description {
@@ -42,24 +51,10 @@
     color: var(--portfolio-white);
     display: flex;
     justify-content: space-between;
-    text-decoration: none;
     transition: .5s;
 }
 
 .card_link:hover {
     color: var(--portfolio-terminal-green);
-}
-
-/* responsive */
-@media screen and (max-width: 768px) {
-    .card_container {
-        width: 270px;
-        height: max-content;
-    }
-    .card_img {
-        width: 270px;
-    }
-    .card_link {
-        text-decoration: underline;
-    }
+    text-decoration: none;
 }

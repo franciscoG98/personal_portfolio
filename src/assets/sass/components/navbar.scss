@@ -5,17 +5,45 @@
     display: flex;
     height: 60px;
     margin: auto;
-    width: 65%;
+    width: 100%;
+
+    @include tablet-portrait {
+        width: 65%;
+    }
+}
+
+.navbar .active {
+    background-color: inherit;
 }
 
 .nav_list {
     align-items: center;
+    background-color: var(--portfolio-terminal-header);
     display: flex;
-    gap: 2%;
-    justify-content: flex-end;
-    overflow: hidden;
-    text-transform: uppercase;
+    flex-direction: column;
+    font-size: 1.5em;
+    height: 100vh;
+    justify-content: center;
+    position: absolute;
+    transform: translateX(-100%);
+    top: 60px;
     width: 100%;
+    z-index: 10;
+
+    @include tablet-portrait {
+        background-color: var(--portfolio-bg);
+        flex-direction: row;
+        gap: 2%;
+        height: fit-content;
+        justify-content: flex-end;
+        position: static;
+        transform: translateX(0);
+        font-size: 1em;
+    }
+}
+
+.nav_list.open {
+    transform: translateX(0);
 }
 
 .nav_item {
@@ -45,44 +73,11 @@
 }
 
 .nav_toggle {
-    display: none;
-}
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
 
-@media screen and (max-width: 768px) {
-    .navbar {
-        width: 100%;
-    }
-    .navbar .active {
-        background-color: inherit;
-    }
-    .nav_list {
-        align-items: center;
-        background-color: var(--portfolio-terminal-header);
-        display: flex;
-        flex-direction: column;
-        font-size: 1.5em;
-        height: calc(100vh - 100px - 60px);
-        justify-content: center;
-        position: absolute;
-        text-transform: uppercase;
-        transform: translateX(-100%);
-        transition: 0.6 ease all;
-        top: 60px;
-        width: 100%;
-        z-index: 10;
-    }
-
-    .nav_list.open {
-        transform: translateX(0);
-    }
-
-    .nav_toggle {
-        display: flex;
-        flex-direction: column;
-        margin: 16px;
-    }
-
-    .nav_toggle span {
+    span {
         background: var(--portfolio-white);
         border-radius: 4px;
         height: 4px;
@@ -91,15 +86,20 @@
         transition: all 0.2s linear;
         width: 30px;
     }
-    .nav_toggle.open > span {
-        transform: rotate(45deg) translate(0px, 0px);
-    }
 
-    .nav_toggle.open > span:nth-child(2) {
+    @include tablet-portrait {
         display: none;
     }
+}
 
-    .nav_toggle.open > span:nth-child(3) {
-        transform: rotate(-45deg) translate(-5px, 2px);
-    }
+.nav_toggle.open > span {
+    transform: rotate(45deg) translate(0px, 0px);
+}
+
+.nav_toggle.open > span:nth-child(2) {
+    display: none;
+}
+
+.nav_toggle.open > span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 2px);
 }

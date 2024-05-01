@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav className="navbar">
+        <nav className="navbar" id="main-navigation" role="navigation" aria-label="Main navigation">
             <NavLink className="nav_link" to="/">
                 <h1 className="nav_title">Francisco Gonzalez</h1>
             </NavLink>

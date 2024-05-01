@@ -2,23 +2,17 @@
     align-items: center;
     background-color: var(--portfolio-bg);
     color: var(--portfolio-white);
-    display: grid;
-    gap: 40px;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     justify-content: center;
-    margin: auto;
-    min-height: calc(100vh - 160px);
-    // overflow: auto;
-    width: fit-content;
-}
+    margin: 36px auto;
 
-@media screen and (max-width: 767px) {
-    .work_container {
-        height: 150vh;
-        display: flex;
-        gap: 30px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    @include tablet-portrait {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        min-height: calc(100vh - 160px);
+        width: fit-content;
     }
 }

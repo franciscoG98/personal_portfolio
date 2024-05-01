@@ -1,33 +1,38 @@
-# Portfolio V3
+# Portfolio v3
 
-[YOU CAN SEE IT ONLINE HERE](https://franciscog98.netlify.app/)
+See deploy [HERE](https://franciscog98.netlify.app/)
 
-Hello :hello: this is my personal porfolio, it was bootstraped with vite, and made with React, pnpm as package manager and Sass for styling. The main idea is to showcase my personal projects and to improve my previous [portfolio 1](https://franciscog98.github.io/portfolio/) and [portfolio 2](https://portfolio-franciscog98.vercel.app/).
+Hi there! this is my personal porfolio, it was bootstraped with vite, and made with React, pnpm as package manager and Sass for styling. The main idea is to showcase my personal projects and to improve my previous:
+- [portfolio 1](https://franciscog98.github.io/portfolio/)
+- [portfolio 2](https://portfolio-franciscog98.vercel.app/)
+
+Tips and bug reports are welcome, thank you
 
 
 ## Scripts
+
+node v20.12.2
+
 Install dependencies
 ```
 pnpm install
 ```
-Run the code
+Run it
 ```
 pnpm run dev
 ```
 
-common breackpoints
-480px, 768px, 1024px, and 1280px
+## Mixins for breakpoints
+- 480px
+- 720px
+- 1024px
+- 1200px
+- 1350px
 
 ## Todo
 
-midu consejos
-- [] Imágenes optimizadas en tamaño y forma
-- [] Metadatos Open Graph para compartir en redes
-- [] No tiene faltas de ortografía
-- [] No existen enlaces rotos
-- [] Orden: Experiencia > Proyectos > Tecnologías
-- [] Usas párrafos separados y no tochos de texto
-- [] La carga inicial está por debajo del segundo
+- [] Tooltips for footer links?
+- [] letcode and medium links in footer
+- [] aclarar que son private repos
+- [] include last projects (sacha mistol web and hackacode)
 
-Optional
-- [] agregar tooltips a los links del footer y a la terminal

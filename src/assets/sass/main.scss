@@ -1,7 +1,10 @@
+@import './mixins.scss';
+
 // pages styles
 @import './pages/home.scss';
 @import './pages/resume.scss';
 @import './pages/work.scss';
+
 // components styles
 @import './components/bash.scss';
 @import './components/footer.scss';
