@@ -35,12 +35,12 @@ const Terminal = () => {
             </div>
             <div className="line line7">
                 <Bash className="bash" />
-                <span className="typer typer6">Technician at UNNE. I&apos;d love to collaborate on new projects.</span>
+                <span className="typer typer6">Technician at UNNE. I&apos;d love to collaborate on new projects!</span>
             </div>
-            <div className="line line8">
+            {/* <div className="line line8">
                 <Bash className="bash" />
                 <span className="typer typer7">Let&apos;s chat!</span>
-            </div>
+            </div> */}
         </div>
     </div>
   )
