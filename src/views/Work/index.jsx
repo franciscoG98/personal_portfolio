@@ -18,19 +18,19 @@ const Work = () => {
             siteLink={"https://sachamistol.com/en/"}
             repoLink={"https://github.com/elhesuu/sacha-mistol-web"}
           /> */}
-          <WorkCard 
+          <WorkCard
             title='Posada la Valentina'
             image={poadaLaValentina}
             alt='Posada La Valentina'
-            description='Website for an holiday resort located in Villa las Rosas, Cordoba, Argentina. Created with Hugo, Sass, deployed on Netlify'
+            description='Website for an holiday resort located in Villa las Rosas, Cordoba, Argentina. Created with Hugo, Sass and deployed on Netlify.'
             siteLink={"https://posadalavalentina.com.ar/"}
             repoLink={"https://github.com/jesusaccede/lavalentina"}
           />
-          <WorkCard 
+          <WorkCard
             title='Movie app'
             image={movieapp}
             alt='Movies website'
-            description='Website where you can find your favorites movies. Created with Vite, React, Sass, deployed on Vercel and the OMDB movie API'
+            description='Website where you can find your favorites movies. Created with Vite, React, Sass, and the OMDB movie API to fetch data. Deployed on Vercel.'
             siteLink={"https://movies-app-fg.vercel.app/"}
             repoLink={"https://github.com/franciscoG98/movies-app"}
           />

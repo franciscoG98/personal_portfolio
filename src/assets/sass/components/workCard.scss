@@ -4,16 +4,12 @@
     border-radius: 12px;
     box-shadow: 0 0 1rem var(--portfolio-bg);
     background-color: var(--portfolio-bg);
-    display: flex;
+    display: grid;
     flex-direction: column;
     height: max-content;
     opacity: .7;
     padding-bottom: 20px;
     width: 270px;
-
-    h2 {
-        margin-top: 16px;
-    }
 
     @include tablet-landscape {
         height: 430px;
@@ -21,22 +17,34 @@
     }
 }
 
+.card__title {
+    text-align: center;
+    margin-block: 12px;
+}
+
 .card_img {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    height: 230px;
+    height: 170px;
     width: 270px;
 
     @include tablet-landscape {
+        height: 230px;
         width: 400px;
     }
 }
 
 .card_description {
-    margin: 16px;
+    margin: 4px 16px;
+    height: 130px;
+
+    @include tablet-landscape {
+        height: 100px;
+    }
 }
 
 .card_icons {
+    align-self: flex-end;
     display: flex;
     justify-content: center;
     gap: 20px;

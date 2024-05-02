@@ -5,8 +5,10 @@ import { BiLinkExternal } from "react-icons/bi";
 const WorkCard = ({ title, image, alt, description, siteLink, repoLink }) => {
   return (
     <div className="card_container">
-      <img className="card_img" src={image} alt={alt} />
-      <h2>{title}</h2>
+      <a className="card_link" href={siteLink} target="__blank" rel="noopener noreferrer">
+        <img className="card_img" src={image} alt={alt} />
+      </a>
+      <h2 className="card__title">{title}</h2>
       <p className="card_description">{description}</p>
       <div className="card_icons">
         <a className="card_link" href={repoLink} target="__blank" rel="noopener noreferrer">

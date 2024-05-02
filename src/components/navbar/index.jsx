@@ -10,13 +10,13 @@ const Navbar = () => {
                 <h1 className="nav_title">Francisco Gonzalez</h1>
             </NavLink>
             <div className={`nav_list ${isOpen && "open"}`}>
-                <NavLink to="/" className="nav_item" activeClassName="active" onClick={() => setIsOpen(!isOpen)}>
+                <NavLink to="/" className="nav_item" activeclassname="active" onClick={() => setIsOpen(!isOpen)}>
                     Home
                 </NavLink>
-                <NavLink to="/work" className="nav_item" activeClassName="active" onClick={() => setIsOpen(!isOpen)}>
+                <NavLink to="/work" className="nav_item" activeclassname="active" onClick={() => setIsOpen(!isOpen)}>
                     Work
                 </NavLink>
-                <NavLink to="/resume" className="nav_item" activeClassName="active" onClick={() => setIsOpen(!isOpen)}>
+                <NavLink to="/resume" className="nav_item" activeclassname="active" onClick={() => setIsOpen(!isOpen)}>
                     Resume
                 </NavLink>
             </div>
