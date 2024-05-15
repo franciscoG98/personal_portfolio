@@ -1,9 +1,6 @@
 .work_container {
-    align-items: center;
-    background-color: var(--portfolio-bg);
-    color: var(--portfolio-white);
-    display: flex;
-    flex-direction: column;
+    @include container;
+
     gap: 24px;
     justify-content: center;
     margin: 36px auto;
@@ -12,7 +9,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: auto;
-        min-height: calc(100vh - 160px);
         width: fit-content;
     }
 }
