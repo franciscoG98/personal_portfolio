@@ -1,0 +1,8 @@
+[build]
+functions = "functions"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://api.hashnode.com/:splat"
+  status = 200
+  force = true

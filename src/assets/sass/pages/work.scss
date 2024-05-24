@@ -8,7 +8,7 @@
     @include tablet-portrait {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: auto;
+        margin: 5rem auto;
         width: fit-content;
     }
 }

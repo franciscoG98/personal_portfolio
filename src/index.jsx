@@ -1,7 +1,5 @@
-import Footer from './components/footer'
 import Navbar from './components/navbar'
 import { SiGithub, SiCodepen, SiLeetcode, SiHashnode } from "react-icons/si";
-// import { FaLinkedin, FaMediumM } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
@@ -70,18 +68,8 @@ const Home = () => {
             <SiLeetcode title="Francisco Gonzalez LeetCode" size={40} />
             <span className='link__slug'>LetCode</span>
           </a>
-          {/* <a
-            className="home__link"
-            href="https://medium.com/@franciscog98"
-            target="__blank"
-            rel="noopener noreferrer"
-          >
-            <FaMediumM title="Francisco Gonzalez Medium" size={40} />
-            <span className='link__slug'>Medium</span>
-          </a> */}
         </div>
       </main>
-      <Footer />
     </>
   )
 }

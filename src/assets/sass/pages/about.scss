@@ -1,3 +1,9 @@
 .about__container {
   @include container;
+
+  margin-top: 3rem;
+}
+
+.hashnode__posts {
+  margin-top: 5rem;
 }
