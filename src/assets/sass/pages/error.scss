@@ -1,0 +1,13 @@
+.error__page {
+  @include container;
+}
+
+.link__go-home {
+  color: var(--portfolio-terminal-green);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link__go-home:hover {
+  text-decoration: underline;
+}

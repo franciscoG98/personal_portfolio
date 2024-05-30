@@ -31,8 +31,11 @@ pnpm run dev
 
 ## Todo
 
-- [] Tooltips for footer links?
-- [] letcode and medium links in footer
-- [] aclarar que son private repos
-- [] include last projects (sacha mistol web and hackacode)
+- [] include last projects:
+  sacha mistol web
+  hackacode - shameless
+  el carro cafe
+  todoApp Typescript (https://github.com/franciscoG98/Todo-App-Typescript)
+  js game? (https://github.com/franciscoG98/js-gam3)
+- [] 
 

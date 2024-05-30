@@ -63,9 +63,10 @@
 }
 
 .nav_title {
-    color: var(--portfolio-terminal-green);
-    margin: 12px;
-    width: max-content;
+    border: 1px solid var(--portfolio-terminal-green);
+    border-radius: 4px;
+    margin: 8px;
+    width: 60px;
 }
 
 .nav_title:hover {

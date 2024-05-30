@@ -4,20 +4,13 @@ import WorkCard from '../../components/workCard'
 // import sachaMistolImage from '../../assets/images/sachamistol.png'
 import movieapp from '../../assets/images/movieapp.png'
 import poadaLaValentina from '../../assets/images/la_valentina_home.png'
+import fakestoreNext from '../../assets/images/fakestore-next.png'
 
 const Work = () => {
   return (
     <>
       <Navbar />
         <main className='work_container'>
-          {/* <WorkCard
-            title='Sacha Mistol Art Hotel'
-            image={sachaMistolImage}
-            alt='Sacha Mistol Art Hotel Website'
-            description='Website for an Hotel in Cordoba, Argentina, where you can see their services, lounges, rooms and more. Made with Create-react-app, React, Sass, Gatsby, GraphQL and Contenful'
-            siteLink={"https://sachamistol.com/en/"}
-            repoLink={"https://github.com/elhesuu/sacha-mistol-web"}
-          /> */}
           <WorkCard
             title='Posada la Valentina'
             image={poadaLaValentina}
@@ -26,6 +19,22 @@ const Work = () => {
             siteLink={"https://posadalavalentina.com.ar/"}
             repoLink={"https://github.com/jesusaccede/lavalentina"}
           />
+          <WorkCard
+            title='FakeStore - Next'
+            image={fakestoreNext}
+            alt='FakeStore - Next'
+            description='Website build for a challenge, list and filter products and categories. Used Next.js, Tailwind, Shadcn/ui and deployed it on Netlify.'
+            siteLink={"https://fakestore-next.netlify.app/"}
+            repoLink={"https://github.com/franciscoG98/fakestore-next"}
+          />
+          {/* <WorkCard
+            title='Sacha Mistol Art Hotel'
+            image={sachaMistolImage}
+            alt='Sacha Mistol Art Hotel Website'
+            description='Website for an Hotel in Cordoba, Argentina, where you can see their services, lounges, rooms and more. Made with Create-react-app, React, Sass, Gatsby, GraphQL and Contenful'
+            siteLink={"https://sachamistol.com/en/"}
+            repoLink={"https://github.com/elhesuu/sacha-mistol-web"}
+          /> */}
           <WorkCard
             title='Movie app'
             image={movieapp}

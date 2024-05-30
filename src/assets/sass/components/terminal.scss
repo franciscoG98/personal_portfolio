@@ -4,7 +4,7 @@
     box-shadow: 0 0 1rem rgba(0, 0, 0, 1.5);
     height: 50%;
     margin-inline: 1rem;
-    width: 100%;
+    width: 80%;
 
     @include tablet-portrait {
         width: 80%;
@@ -57,7 +57,7 @@
     padding: 4px 16px 32px 0px;
 }
 
-
+$animation-delay-increment: 3.5s;
 .line {
     display: flex;
     margin: 12px 0;
@@ -66,14 +66,16 @@
     line-height: 16px;
     overflow: hidden;
     white-space: nowrap;
-    width: 190px;
+    width: 0;
     animation: typing 3.5s steps(40, end) normal forwards, cursor 3.5s step-end;
 
-    .typer {
-        margin-left: 5px;
+    @for $i from 1 through 7 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * $animation-delay-increment;
+        }
     }
 
-    @include mobile-landscape {
+    @include tablet-portrait {
         font-size: 16px;
         line-height: 20px;
     }
@@ -84,39 +86,13 @@
     }
 }
 
-// type writer animation delay
-.line2 {
-    animation-delay: 4s;
+.typer {
+    margin-left: 8px;
 }
-
-.line3 {
-    animation-delay: 8s;
-}
-
-.line4 {
-    animation-delay: 12s;
-}
-
-.line5 {
-    animation-delay: 16s;
-}
-
-.line6 {
-    animation-delay: 20s;
-}
-
-.line7 {
-    animation-delay: 24s;
-}
-
-.line8 {
-    animation-delay: 28s;
-}
-
 
 /* The typing effect */
 @keyframes typing {
-    from { width: 200px }
+    from { width: 8px }
     to { width: 100% }
 }
 
@@ -125,15 +101,4 @@
     1% {border-right: 0.5em solid var(--portfolio-white);}
     99% {border-right: 0.5em solid var(--portfolio-white);}
     100% {border-right-color: transparent;}
-}
-
-@media screen and (max-width: 1024px) {
-    .line1, .line2, .line3, .line4, .line5, .line6, .line7, .line8 {
-        width: 0;
-    }
-
-    @keyframes typing {
-        from { width: 0px; }
-        to { width: 100%; }
-    }
 }
