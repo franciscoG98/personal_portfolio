@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@apollo/client": "^3.10.4",
     "graphql": "^16.8.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
