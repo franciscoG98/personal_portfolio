@@ -5,6 +5,7 @@ import WorkCard from '../../components/workCard'
 import movieapp from '../../assets/images/movieapp.png'
 import poadaLaValentina from '../../assets/images/la_valentina_home.png'
 import fakestoreNext from '../../assets/images/fakestore-next.png'
+import elCarroCafe from '../../assets/images/elCarroCafe.png'
 
 const Work = () => {
   return (
@@ -42,6 +43,14 @@ const Work = () => {
             description='Website where you can find your favorites movies. Created with Vite, React, Sass, and the OMDB movie API to fetch data. Deployed on Vercel.'
             siteLink={"https://movies-app-fg.vercel.app/"}
             repoLink={"https://github.com/franciscoG98/movies-app"}
+          />
+          <WorkCard
+            title='El Carro Café'
+            image={elCarroCafe}
+            alt='El Carro Café'
+            description='QR menu website for a local food truck with a mobile-first design. The owner can create and edit all the data displayed on Contentful. The website was built using Astro and Contentful and deployed on Netlify.'
+            siteLink={"https://elcarrocafe.netlify.app/"}
+            repoLink={"https://github.com/franciscoG98/el-carro-cafe"}
           />
         </main>
       <Footer />

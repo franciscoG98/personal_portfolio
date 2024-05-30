@@ -10,9 +10,9 @@ const Home = () => {
       <Navbar />
       <main className='home__container'>
         <div className='home__intro'>
-          Hey there! I'm
           <h1 className='home__title'>Francisco</h1>
-          I build things online, you can find me here:
+          <h2 className='home__subtitle'>web developer</h2>
+          <p>I like to build things online, you can find me here:</p>
         </div>
 
         <div className="home__links">

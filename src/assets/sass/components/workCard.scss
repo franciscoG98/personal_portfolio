@@ -12,7 +12,7 @@
     width: 270px;
 
     @include tablet-landscape {
-        height: 430px;
+        height: 460px;
         width: 400px;
     }
 }
@@ -36,10 +36,11 @@
 
 .card_description {
     margin: 4px 16px;
-    height: 130px;
+    margin-bottom: 20px;
+    height: 180px;
 
     @include tablet-landscape {
-        height: 100px;
+        height: 130px;
     }
 }
 
