@@ -31,11 +31,6 @@ pnpm run dev
 
 ## Todo
 
-- [] include last projects:
+- [] include projects:
   sacha mistol web
   hackacode - shameless
-  el carro cafe
-  todoApp Typescript (https://github.com/franciscoG98/Todo-App-Typescript)
-  js game? (https://github.com/franciscoG98/js-gam3)
-- [] 
-

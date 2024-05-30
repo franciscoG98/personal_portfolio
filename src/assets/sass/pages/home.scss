@@ -3,15 +3,38 @@
 }
 
 .home__intro {
+  align-items: center;
   display: flex;
   width: 400px;
   flex-direction: column;
-  text-align: left;
   text-align: center;
 }
 
 .home__title {
-  color: var(--portfolio-terminal-green)
+  font-size: 3rem;
+
+  @include mobile-landscape {
+    font-size: 5rem;
+  }
+}
+
+.home__subtitle {
+  color: var(--portfolio-terminal-green);
+  font-size: 3rem;
+  font: 800 40px Arial;
+  text-transform: capitalize;
+  white-space: pre-wrap;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px;
+
+  @include mobile-landscape {
+    font: 800 60px Arial;
+    font-size: 4rem;
+  }
+
+  @include tablet-portrait {
+    white-space: nowrap;
+  }
 }
 
 .home__links {
