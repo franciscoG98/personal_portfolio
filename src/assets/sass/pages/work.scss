@@ -9,6 +9,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 5rem auto;
+        margin-bottom: calc(100px + 5rem);
         width: fit-content;
     }
 }

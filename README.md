@@ -31,6 +31,5 @@ pnpm run dev
 
 ## Todo
 
-- [] include projects:
-  sacha mistol web
-  hackacode - shameless
+- [] 
+- [] 

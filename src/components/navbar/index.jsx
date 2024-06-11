@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/images/logo_fg98.png'
+import { IoMenu, IoClose } from "react-icons/io5";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,16 +26,26 @@ const Navbar = () => {
           <NavLink to="/work" className="nav_item" activeclassname="active" onClick={() => setIsOpen(!isOpen)}>
             Work
           </NavLink>
-          <NavLink to="/resume" className="nav_item" activeclassname="active" onClick={() => setIsOpen(!isOpen)}>
-            Resume
+          <NavLink to="/blog" className="nav_item" activeclassname="active" onClick={() => setIsOpen(!isOpen)}>
+            Blog
           </NavLink>
         </div>
-        {/* burger menu */}
-        <div className={`nav_toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+
+        {/* mobile menu */}
+        {
+          isOpen
+            ? <IoClose
+              color="#fff"
+              size={30}
+              className={`nav_toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}
+            />
+            : <IoMenu
+              color="#fff"
+              size={30}
+              className={`nav_toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}
+            />
+        }
+
       </nav>
     )
 }
