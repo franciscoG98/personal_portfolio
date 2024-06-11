@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from "./index"
 import About from "./views/About"
 import Work from "./views/Work"
-import Resume from "./views/Resume"
+import Blog from "./views/Blog"
 import ErrorPage from "./views/ErrorPage"
 
 const router = createBrowserRouter([
@@ -25,8 +25,8 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />
   },
   {
-    path: "/resume",
-    element: <Resume />,
+    path: "/blog",
+    element: <Blog />,
     errorElement: <ErrorPage />
   },
   {
