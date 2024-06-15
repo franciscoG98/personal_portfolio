@@ -1,17 +1,14 @@
-import { NavLink } from 'react-router-dom'
 import Footer from '../../components/footer'
-import Navbar from '../../components/navbar'
 
 const Error = () => {
+
   return (
-    <>
-        <Navbar />
-        <main className='error__page'>
-          <h1>Error!</h1>
-          <p>Something went wrong, you can return <NavLink to="/" className="link__go-home">Home</NavLink></p>
-        </main>
-        <Footer />
-    </>
+    <main className='error__page'>
+      <h1>Error!</h1>
+      <h2>What are you doing chinchulin?</h2>
+      <p>Please go back <a href="/" className="link__go-home">Home</a></p>
+      <Footer />
+    </main>
   )
 }
 

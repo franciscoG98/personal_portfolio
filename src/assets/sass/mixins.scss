@@ -34,11 +34,17 @@
     }
 }
 
+@mixin title {
+    color: var(--portfolio-white);
+    text-align: center;
+    font-size: 2rem;
+}
+
 @mixin container {
     align-items: center;
     color: var(--portfolio-white);
     display: flex;
     flex-direction: column;
-    min-height: calc(100vh - 180px);
+    min-height: 100vh;
     justify-content: center;
 }

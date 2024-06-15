@@ -1,6 +1,6 @@
 .card_container {
     align-items: center;
-    border: 1px solid var(--portfolio-terminal-green);
+    border: 1px solid var(--portfolio-white);
     border-radius: 12px;
     box-shadow: 0 0 1rem var(--portfolio-bg);
     background-color: var(--portfolio-bg);
@@ -66,4 +66,11 @@
 .card_link:hover {
     color: var(--portfolio-terminal-green);
     text-decoration: none;
+    transition-duration: all .2s;
+}
+
+.card_container:hover {
+    text-decoration: none;
+    box-shadow: -4px -4px 8px -2px var(--portfolio-terminal-green);
+    transition-duration: all .2s;
 }

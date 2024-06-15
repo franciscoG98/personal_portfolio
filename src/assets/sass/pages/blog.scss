@@ -1,18 +1,11 @@
-// .blog__container {
-//     @include tablet-portrait {
-//         padding-bottom: 20rem;
-//     }
-// }
+.blog__container {
+    @include container;
+
+    // margin-bottom: 6rem;
+}
 
 .hashnode__title {
-    margin-top: 2rem;
-    text-align: center;
-    font-size: 2.5rem;
-    color: var(--portfolio-terminal-green);
-
-    @include mobile {
-        font-size: 2rem;
-    }
+    @include title;
 }
 
 .hashnode__posts {
@@ -31,7 +24,7 @@
 
 // cards
 .post__card__container {
-    border: 1px solid var(--portfolio-terminal-green);
+    border: 1px solid var(--portfolio-white);
     border-radius: 12px;
     box-shadow: 0 0 1rem var(--portfolio-bg);
     background-color: var(--portfolio-bg);
@@ -43,9 +36,23 @@
     width: 270px;
 
     @include tablet-landscape {
-        height: 250px;
         width: 400px;
     }
+}
+
+.post__card__time {
+    margin-left: 12px;
+    margin-top: 24px;
+}
+
+.post__card__container h3 {
+    text-align: center;
+}
+
+.post__card__container p {
+    font-weight: normal;
+    font-size: inherit;
+    padding: 12px;
 }
 
 .post__card__img {
@@ -62,10 +69,7 @@
 
 .post__card__link {
     color: var(--portfolio-white);
-    text-align: center;
-    font-size: 1.2rem;
     font-weight: 600;
-    white-space: nowrap;
     text-decoration: none;
     transition: .5s;
 
@@ -75,6 +79,7 @@
 }
 
 .post__card__link:hover {
-    color: var(--portfolio-terminal-green);
-    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: -4px -4px 8px -2px var(--portfolio-terminal-green);
+    transition-duration: all .2s;
 }

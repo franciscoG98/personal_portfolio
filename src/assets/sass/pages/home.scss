@@ -5,16 +5,30 @@
 .home__intro {
   align-items: center;
   display: flex;
-  width: 400px;
   flex-direction: column;
   text-align: center;
+
+  @include mobile-landscape {
+    line-height: 3rem;
+  }
+
+  @include tablet-portrait{
+    line-height: 5rem;
+  }
+}
+
+.home__intro p {
+  @include mobile-landscape {
+    font-size: 1.2rem;
+    white-space: nowrap;
+  }
 }
 
 .home__title {
   font-size: 3rem;
 
   @include mobile-landscape {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 }
 
@@ -29,7 +43,9 @@
 
   @include mobile-landscape {
     font: 800 60px Arial;
-    font-size: 4rem;
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-top: .4rem;
   }
 
   @include tablet-portrait {
@@ -39,23 +55,45 @@
 
 .home__links {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 24px;
-  margin-top: 48px;
+  margin-top: 36px;
+
+  @include mobile-landscape {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
+
+  @include tablet-portrait {
+    display: flex;
+    gap: 24px;
+  }
 }
 
 .home__link {
   align-items: center;
-  color: var(--portfolio-terminal-green);
+  border: 1px solid var(--portfolio-white);
+  border-radius: 8px;
+  color: var(--portfolio-white);
   display: flex;
   flex-direction: column;
-  margin-inline: 16px;
+  padding: 12px 8px;
   text-decoration: none;
+  width: 5rem;
+
+  @include mobile-landscape {
+    margin: 12px 40px;
+  }
+
+  @include tablet-portrait {
+    gap: 24px;
+    margin: 0;
+  }
 }
 
 .home__link:hover {
-  color: var(--portfolio-white);
-  transition-duration: .5s;
+  box-shadow: -4px -4px 8px -2px var(--portfolio-terminal-green);
+  transition-duration: all .5s;
 }
 
 .link__slug {

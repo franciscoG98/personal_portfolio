@@ -1,16 +1,11 @@
-import Footer from '../../components/footer'
-import Navbar from '../../components/navbar'
 import Terminal from '../../components/terminal'
 
 const About = () => {
   return (
-    <main>
-      <Navbar />
-      <div className='about__container'>
-        <Terminal />
-      </div>
-      <Footer />
-    </main>
+    <div className='about__container'>
+      <h2 className='hashnode__title'>About me</h2>
+      <Terminal />
+    </div>
   )
 }
 
