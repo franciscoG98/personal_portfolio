@@ -7,6 +7,8 @@ const publicationQuery = `
             title
             id
             url
+            brief
+            updatedAt
             coverImage {
               url
             }

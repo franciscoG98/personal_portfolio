@@ -31,5 +31,9 @@ pnpm run dev
 
 ## Todo
 
+- [] - terminal ver:
+  + puede ser que solo escriba la ultima linea nada mas
+  + terminal muy larga la linea
+  + boton saltar aimacion
 - [] 
 - [] 

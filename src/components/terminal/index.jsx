@@ -1,8 +1,22 @@
 import Bash from "../bash";
 import { AiOutlineCode } from "react-icons/ai";
 import { about_text } from "./about_text";
+// import { useState } from "react";
 
 const Terminal = () => {
+
+  // const [animation, setAnimation] = useState(false)
+
+  // console.log(animation);
+
+  // const handleClick = (e) => {
+  //   e.preventDefault()
+  //   setAnimation(!animation)
+  //   const line = document.getElementsByClassName('line')
+  //   line.style.setAnimation = 'none'
+  //   console.log(line);
+  // }
+
   return (
     <div className="terminal">
       <div className="terminal_header">
@@ -19,6 +33,7 @@ const Terminal = () => {
           ))
         }
       </div>
+      {/* <button onClick={(e) => handleClick(e)}>Skip Animation</button> */}
     </div>
   )
 }

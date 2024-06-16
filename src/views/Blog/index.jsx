@@ -1,5 +1,3 @@
-import Footer from '../../components/footer'
-import Navbar from '../../components/navbar'
 import hashnodeHandler from '../../../netlify/functions/graphql'
 import { useState, useEffect } from 'react'
 import PostCard from '../../components/postCard'
@@ -33,16 +31,14 @@ const Blog = () => {
   }, []);
 
   return (
-    <main className='blog__container'>
-      <Navbar />
+    <section className='blog__container'>
       <h2 className='hashnode__title'>Hashnode Posts</h2>
       <div className="hashnode__posts">
         {posts.map(post => (
           <PostCard key={post.id} post={post} />
         ))}
       </div>
-      <Footer />
-    </main>
+    </section>
   )
 }
 
