@@ -1,7 +1,11 @@
 .blog__container {
     @include container;
 
-    // margin-bottom: 6rem;
+    margin-bottom: 6rem;
+
+    @include tablet-portrait {
+        margin-bottom: 3rem;
+    }
 }
 
 .hashnode__title {
@@ -23,43 +27,49 @@
 }
 
 // cards
-.post__card__container {
+.card__container--post {
     border: 1px solid var(--portfolio-white);
     border-radius: 12px;
     box-shadow: 0 0 1rem var(--portfolio-bg);
     background-color: var(--portfolio-bg);
-    display: grid;
+    display: flex;
     flex-direction: column;
     height: max-content;
     opacity: .7;
     padding-bottom: 20px;
     width: 270px;
 
+    @include tablet-portrait {
+        height: 370px;
+    }
+
     @include tablet-landscape {
+        height: 400px;
         width: 400px;
     }
 }
 
-.post__card__time {
-    margin-left: 12px;
-    margin-top: 24px;
+.card__link--post {
+    color: var(--portfolio-white);
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    text-decoration: none;
+
+    @include tablet-landscape {
+        font-size: 1.4rem;
+    }
 }
 
-.post__card__container h3 {
-    text-align: center;
-}
-
-.post__card__container p {
-    font-weight: normal;
-    font-size: inherit;
-    padding: 12px;
-}
-
-.post__card__img {
+.card__img--post {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    height: 200px;
+    height: fit-content;
     width: 270px;
+
+    @include tablet-portrait {
+        height: 130px;
+    }
 
     @include tablet-landscape {
         height: 200px;
@@ -67,19 +77,49 @@
     }
 }
 
-.post__card__link {
-    color: var(--portfolio-white);
-    font-weight: 600;
-    text-decoration: none;
-    transition: .5s;
-
-    @include tablet-landscape {
-        font-size: 1.4rem;
-    }
+.card__container--post h3 {
+    text-align: center;
+    font-size: 20px;
 }
 
-.post__card__link:hover {
+.card__time {
+    align-self: flex-end;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 12px;
+    margin-top: 8px;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.post__brief {
+    flex: 1;
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 0 12px;
+}
+
+.post__button {
+    background-color: var(--portfolio-bg);
+    border: 1px solid var(--portfolio-white);
     border-radius: 12px;
-    box-shadow: -4px -4px 8px -2px var(--portfolio-terminal-green);
-    transition-duration: all .2s;
+    color: var(--portfolio-white);
+    display: flex;
+    font-weight: 600;
+    justify-self: flex-end;
+    margin: 8px auto;
+    padding: 12px 16px;
+}
+
+.post__button:hover {
+    color: var(--portfolio-terminal-green);
+    border: 1px solid var(--portfolio-terminal-green);
+    box-shadow: -4px -4px 8px -5px var(--portfolio-terminal-green);
+    transition: all .2s;  
 }

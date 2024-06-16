@@ -60,17 +60,17 @@
     color: var(--portfolio-white);
     display: flex;
     justify-content: space-between;
-    transition: .5s;
+    transition: all .2s;
 }
 
 .card_link:hover {
     color: var(--portfolio-terminal-green);
     text-decoration: none;
-    transition-duration: all .2s;
+    transition: all .2s;
 }
 
 .card_container:hover {
     text-decoration: none;
     box-shadow: -4px -4px 8px -2px var(--portfolio-terminal-green);
-    transition-duration: all .2s;
+    transition: all .2s;
 }
