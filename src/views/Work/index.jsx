@@ -24,7 +24,6 @@ const Work = () => {
           alt='Posada La Valentina'
           description='Website for an holiday resort located in Villa las Rosas, Cordoba, Argentina. Created with Hugo, Sass and deployed on Netlify.'
           siteLink={"https://posadalavalentina.com.ar/"}
-          repoLink={"https://github.com/jesusaccede/lavalentina"}
         />
         {/* <WorkCard
             title='Sacha Mistol Art Hotel'

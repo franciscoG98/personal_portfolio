@@ -1,21 +1,16 @@
+import { useState } from "react";
 import Bash from "../bash";
 import { AiOutlineCode } from "react-icons/ai";
 import { about_text } from "./about_text";
-// import { useState } from "react";
 
 const Terminal = () => {
 
-  // const [animation, setAnimation] = useState(false)
+  const [animation, setAnimation] = useState(true)
 
-  // console.log(animation);
-
-  // const handleClick = (e) => {
-  //   e.preventDefault()
-  //   setAnimation(!animation)
-  //   const line = document.getElementsByClassName('line')
-  //   line.style.setAnimation = 'none'
-  //   console.log(line);
-  // }
+  const handleClick = (e) => {
+    e.preventDefault()
+    setAnimation(!animation)
+  }
 
   return (
     <div className="terminal">
@@ -26,14 +21,23 @@ const Terminal = () => {
       <div className="terminal_body">
         {
           about_text.map((line, idx) => (
-            <div key={idx} className="line">
+            <div
+              key={idx}
+              className={`${animation ? 'line show--animation' : 'line skip--animation'}`}
+            >
               <Bash className="bash" />
               <span className="typer">{line}</span>
             </div>
           ))
         }
       </div>
-      {/* <button onClick={(e) => handleClick(e)}>Skip Animation</button> */}
+      <button className="terminal__btn" onClick={(e) => handleClick(e)}>
+        {
+          animation
+          ? 'Skip Animation'
+          : 'Show Animation'
+        }
+      </button>
     </div>
   )
 }
