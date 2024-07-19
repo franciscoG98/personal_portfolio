@@ -1,4 +1,4 @@
-# Portfolio v3
+# Personal Portfolio
 
 See deploy [HERE](https://franciscog98.netlify.app/)
 
