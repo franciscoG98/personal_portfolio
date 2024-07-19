@@ -11,10 +11,20 @@ const WorkCard = ({ title, image, alt, description, siteLink, repoLink }) => {
       <h2 className="card__title">{title}</h2>
       <p className="card_description">{description}</p>
       <div className="card_icons">
-        <a className="card_link" href={repoLink} target="__blank" rel="noopener noreferrer">
-          <SiGithub className="icon" size={20}/>
-          <span>Repository</span>
-        </a>
+        {
+          repoLink
+          ? (
+            <a className="card_link"
+              href={repoLink}
+              target="__blank"
+              rel="noopener noreferrer"
+            >
+              <SiGithub className="icon" size={20}/>
+              <span>Repository</span>
+            </a>
+          )
+          : ""
+        }
         <a className="card_link" href={siteLink} target="__blank" rel="noopener noreferrer">
           <BiLinkExternal className="icon" size={20}/>
           <span>View&nbsp;Site</span>

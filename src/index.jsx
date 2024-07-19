@@ -8,6 +8,10 @@ import Blog from "./views/Blog"
 
 import { useRef } from "react";
 
+console.log(
+  '%cWhat are you looking for? My console is clear!!\nOr it was the last time I checked...\nIf not, please feel free to reach out, I\'d be grateful!',
+  'background-color: #000; border: 1px solid #15b315; color: #15b315; font-family: sans-serif; padding: 12px 16px; border-radius: 8px; font-size: 16px;'
+);
 
 const index = () => {
 

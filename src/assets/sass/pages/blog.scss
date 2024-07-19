@@ -77,6 +77,11 @@
     }
 }
 
+.card__img--post:hover {
+    border-bottom: 1px solid var(--portfolio-white);
+    transition: .3s all;
+}
+
 .card__container--post h3 {
     text-align: center;
     font-size: 20px;
@@ -118,8 +123,6 @@
 }
 
 .post__button:hover {
-    color: var(--portfolio-terminal-green);
-    border: 1px solid var(--portfolio-terminal-green);
-    box-shadow: -4px -4px 8px -5px var(--portfolio-terminal-green);
-    transition: all .2s;  
+    box-shadow: -4px -4px 8px -5px var(--portfolio-white);
+    transition: all .2s;
 }

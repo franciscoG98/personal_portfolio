@@ -34,6 +34,11 @@
     }
 }
 
+.card_img:hover {
+    border-bottom: 1px solid var(--portfolio-white);
+    transition: .3s all;
+}
+
 .card_description {
     margin: 4px 16px;
     margin-bottom: 20px;
@@ -66,11 +71,5 @@
 .card_link:hover {
     color: var(--portfolio-terminal-green);
     text-decoration: none;
-    transition: all .2s;
-}
-
-.card_container:hover {
-    text-decoration: none;
-    box-shadow: -4px -4px 8px -2px var(--portfolio-terminal-green);
     transition: all .2s;
 }
