@@ -1,10 +1,10 @@
 # Personal Portfolio
 
-See deploy [HERE](https://franciscog98.netlify.app/)
+This project is **DEPRECATED**, the last portfolio version is [this one](https://franciscog.vercel.app/en).
+
+But this still online, you can see deploy [HERE](https://franciscog98.netlify.app/)
 
 Hi there! this is my personal porfolio, it was bootstraped with vite, and made with React, pnpm as package manager and Sass for styling. The main idea is to showcase my personal projects and to improve my previous:
-- [portfolio 1](https://franciscog98.github.io/portfolio/)
-- [portfolio 2](https://portfolio-franciscog98.vercel.app/)
 
 Tips and bug reports are welcome, thank you
 
